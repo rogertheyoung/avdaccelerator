@@ -30,7 +30,7 @@ az deployment create \
   --parameters avdVnetPrivateDnsZoneKeyvaultId="<PrivateDnsZoneKeyvaultId>" \
   --avdDeployMonitoring=true \
   --deployAlaWorkspace=true \
-  --location "eastus"
+  --location "westeurope"
 ```
 
 ### PowerShell
@@ -57,7 +57,7 @@ New-AzSubscriptionDeployment `
   -avdVnetPrivateDnsZoneKeyvaultId "<PrivateDnsZoneKeyvaultId>" `
   -avdDeployMonitoring $true `
   -deployAlaWorkspace $true `
-  -Location "eastus"
+  -Location "westeurope"
 ```
 
 ## Optional: Custom Image Build deployment
@@ -69,9 +69,9 @@ az deployment create \
   --template-file workload/bicep/deploy-custom-image.bicep \
   --parameters @workload/bicep/parameters/deploy-custom-image-parameters-example.json \
   --parameters sharedServicesSubId="<subscriptionId>" \
-  --deploymentLocation="eastus" \
-  --imageVersionPrimaryLocation="eastus" \
-  --Location "eastus"
+  --deploymentLocation="westeurope" \
+  --imageVersionPrimaryLocation="westeurope" \
+  --Location "westeurope"
 ```
 
 ### PowerShell
@@ -81,9 +81,9 @@ New-AzSubscriptionDeployment `
   -TemplateFile workload/bicep/deploy-custom-image.bicep `
   -TemplateParameterFile workload/bicep/parameters/deploy-custom-image-parameters-example.json `
   -sharedServicesSubId "<subscriptionId>" `
-  -deploymentLocation "eastus" `
-  -imageVersionPrimaryLocation "eastus" `
-  -Location "eastus"
+  -deploymentLocation "westeurope" `
+  -imageVersionPrimaryLocation "westeurope" `
+  -Location "westeurope"
 ```
 
 ## Contributing

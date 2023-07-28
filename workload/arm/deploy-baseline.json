@@ -43,16 +43,16 @@
     },
     "avdSessionHostLocation": {
       "type": "string",
-      "defaultValue": "eastus2",
+      "defaultValue": "westeurope",
       "metadata": {
-        "description": "Location where to deploy compute services. (Default: eastus2)"
+        "description": "Location where to deploy compute services. (Default: westeurope)"
       }
     },
     "avdManagementPlaneLocation": {
       "type": "string",
-      "defaultValue": "eastus2",
+      "defaultValue": "westeurope",
       "metadata": {
-        "description": "Location where to deploy AVD management plane. (Default: eastus2)"
+        "description": "Location where to deploy AVD management plane. (Default: westeurope)"
       }
     },
     "avdWorkloadSubsId": {

@@ -36,7 +36,7 @@
             "value": ""
         },
         "deploymentLocation": {
-            "value": "eastus"
+            "value": "westeurope"
         },
         "enableMonitoringAlerts": {
             "value": false
@@ -84,7 +84,7 @@
             "value": ""
         },
         "imageVersionPrimaryLocation": {
-            "value": "eastus"
+            "value": "westeurope"
         },
         "imageVersionStorageAccountType": {
             "value": "Standard_LRS"

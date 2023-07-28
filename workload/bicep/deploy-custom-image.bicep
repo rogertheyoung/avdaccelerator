@@ -104,8 +104,8 @@ param departmentTag string = 'Contoso-AVD'
     'westus2'
     'westus3'
 ])
-@sys.description('Location to deploy the resources in this solution, except the image template. (Default: eastus)')
-param deploymentLocation string = 'eastus'
+@sys.description('Location to deploy the resources in this solution, except the image template. (Default: westeurope)')
+param deploymentLocation string = 'westeurope'
 
 @sys.description('Set to deploy monitoring and alerts for the build automation (Default: false).')
 param enableMonitoringAlerts bool = false

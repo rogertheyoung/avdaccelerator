@@ -3,10 +3,10 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "deploymentLocation": {
-            "value": "eastus"
+            "value": "westeurope"
         },
         "imageVersionPrimaryLocation": {
-            "value": "eastus"
+            "value": "westeurope"
         },
         "sharedServicesSubId": {
             "value": "<<SubscriptionID>>"

@@ -25,11 +25,11 @@ param deploymentEnvironment string = 'Dev'
 @sys.description('This value is used to set the expiration date on the disk encryption key. (Default: 60)')
 param diskEncryptionKeyExpirationInDays int = 60
 
-@sys.description('Location where to deploy compute services. (Default: eastus2)')
-param avdSessionHostLocation string = 'eastus2'
+@sys.description('Location where to deploy compute services. (Default: westeurope)')
+param avdSessionHostLocation string = 'westeurope'
 
-@sys.description('Location where to deploy AVD management plane. (Default: eastus2)')
-param avdManagementPlaneLocation string = 'eastus2'
+@sys.description('Location where to deploy AVD management plane. (Default: westeurope)')
+param avdManagementPlaneLocation string = 'westeurope'
 
 @sys.description('AVD workload subscription ID, multiple subscriptions scenario. (Default: "")')
 param avdWorkloadSubsId string = ''
@@ -56,7 +56,7 @@ param avdIdentityServiceProvider string = 'ADDS'
 param createIntuneEnrollment bool = false
 
 @sys.description('Optional, Identity ID array to grant RBAC role to access AVD application group. (Default: "")')
-param avdApplicationGroupIdentitiesIds array = []
+param avdApplicationGroupIdentitiesIds array = [0,0,0]
 
 @allowed([
     'Group'

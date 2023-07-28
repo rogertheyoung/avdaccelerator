@@ -108,9 +108,9 @@
     },
     "deploymentLocation": {
       "type": "string",
-      "defaultValue": "eastus",
+      "defaultValue": "westeurope",
       "metadata": {
-        "description": "Location to deploy the resources in this solution, except the image template. (Default: eastus)"
+        "description": "Location to deploy the resources in this solution, except the image template. (Default: westeurope)"
       },
       "allowedValues": [
         "australiaeast",
