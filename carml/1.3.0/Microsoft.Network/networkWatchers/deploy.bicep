@@ -92,7 +92,7 @@ module networkWatcher_flowLogs 'flowLogs/deploy.bicep' = [for (flowLog, index) i
     location: contains(flowLog, 'location') ? flowLog.location : location
     name: contains(flowLog, 'name') ? flowLog.name : '${last(split(flowLog.targetResourceId, '/'))}-${split(flowLog.targetResourceId, '/')[4]}-flowlog'
     networkWatcherName: networkWatcher.name
-    retentionInDays: contains(flowLog, 'retentionInDays') ? flowLog.retentionInDays : 365
+    retentionInDays: contains(flowLog, 'retentionInDays') ? flowLog.retentionInDays : 90
     storageId: flowLog.storageId
     targetResourceId: flowLog.targetResourceId
     trafficAnalyticsInterval: contains(flowLog, 'trafficAnalyticsInterval') ? flowLog.trafficAnalyticsInterval : 60
